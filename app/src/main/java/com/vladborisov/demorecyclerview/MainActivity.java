@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity {
         //LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, true); // как вариант
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(new ElementItemsAdapter(LayoutInflater.from(this), new ArrayList<>()));
+        recyclerView.setAdapter(new ElementItemsAdapter(LayoutInflater.from(this), ElementItemsGen.getInstance().getItems()));
     }
 }
