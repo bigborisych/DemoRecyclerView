@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DemoRecyclerView</string>
+    <string name="activity_main_button_add">Добавить</string>
+    <string name="activity_main_button_delete">Удалить</string>
 </resources>
