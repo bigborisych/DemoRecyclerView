@@ -7,7 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ElementItemViewHolder extends RecyclerView.ViewHolder {
-    private TextView titleTextView, subtitleTextView;
+    private final TextView titleTextView;
+    private final TextView subtitleTextView;
 
     public ElementItemViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -16,7 +17,7 @@ public class ElementItemViewHolder extends RecyclerView.ViewHolder {
         subtitleTextView = itemView.findViewById(R.id.subTitleTextView);
     }
 
-    public void bind(ElementItem item){
+    public void bind(ElementItem item) {
         titleTextView.setText(item.title);
         subtitleTextView.setText(item.subtitle);
     }
